@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b18a1e69b6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Rusty1</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/app.js"></script>
+    <link rel="icon" href="./images/anbu.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <!-- Scroll Up Button -->
+    <div class="scroll-up-btn show">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    
+    <!-- Nav Bar Starts -->
+    <nav class="navbar" id="navbar">
+        <div class="name-logo" id="name-logo">
+            <h1 class="gradient">ANBU.</span></h1>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#about" class="drop-down">About</a></li>
+            <li><a href="#tokenomics" class="drop-down">Tokenomics</a></li>
+            <li><a href="#mask" class="drop-down">Buy</a></li>
+        </ul>
+        <div class="drop-down" id="drop">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <!-- Nav Bar Ends -->
+
+    <!-- Home Section starts -->
+    <div class="homemax" id="home">
+        <div class="container">
+            <div class="home">
+                <div class="anbu-img">
+                    <img src="./images/anbulogoblue.svg" alt="anbu image will be here">
+                </div>
+                <div class="heading">
+                    <h2>WHAT IS ANBU</h2>
+                </div>
+                <div class="text">
+                    <p>ANBU is a meme coin for anime lovers with mad value. Ownership has been revoked</p>
+                </div>
+                <a href="#">Buy Anbu</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section Ends -->
+
+    <!-- Xtics Section Starts -->
+
+    <div class="xtics" id="about">
+        <div class="container">
+            <div class="xtic reveal">
+                <h2>WHAT CAN ANBU DO</h2>
+                <div class="box one reveal">
+                    <h3>SAFU</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam tempore vel ex unde labore, facilis ullam ratione officia omnis!</p>
+                </div>
+                <div class="box two reveal">
+                    <h3>MEME TOKEN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat maiores alias laboriosam veniam. Id laboriosam dicta consectetur minus ex.</p>
+                </div>
+                <div class="box three reveal">
+                    <h3>COMMUNITY DRIVEN</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates impedit accusamus odio, veniam nisi voluptatibus eum suscipit commodi vitae dolores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Xtic Section Ends -->
+
+    <!-- Tokenomics Begins -->
+    <div class="tokenomics" id="tokenomics">
+        <div class="container">
+            <div class="tokenomic reveal">
+                <h2>TOKENOMICS</h2>
+                <div class="details">
+                    <p>Total Supply: ANBU</p>
+                    <p>Team: </p>
+                    <p>Listing: </p>
+                    <p>Rewards: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mask Section Begins -->
+    <div class="mask" id="mask">
+        <div class="container">
+            <div class="mask-box reveal">
+                <h3>Join the <b>ANBU</b></h3>
+                <div class="mask-img">
+                    <img src="./images/anbu1.svg" alt="anbu-mask">
+                </div>
+                <a href="#">Buy ANBU</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts -->
+    <footer>
+        <div class="footer">
+            <ul class="foot">
+                <li>
+                    <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#telegram"><i class="fab fa-telegram"></i></a>
+                </li>
+                <li>
+                    <a href="#reddit"><i class="fab fa-reddit"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+    </script>
+</body>
+</html>
