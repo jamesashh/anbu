@@ -196,6 +196,18 @@ body{
 .box p{
     color: rgb(192, 192, 192);
 }
+.safu-img, .meme-img, .community-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.safu-img img, .meme-img img, .community-img img{
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+}
 
 /* Tokenomics Styles */
 .tokenomic{
@@ -245,6 +257,9 @@ body{
     width: 90%;
     margin: auto;
     height: 200px;
+}
+span{
+    color: rgb(0, 225, 255);
 }
 .mask-box a{
     display: inline-block;
@@ -326,6 +341,9 @@ body{
         color: rgb(0, 225, 255);
         border-bottom: 2px solid rgb(0, 225, 255);
     }
+    .home .text{
+        width: 60%;
+    }
     .home a{
         width: 30%;
     }
@@ -338,7 +356,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 20px 80px;
         background: rgba(0, 153, 255, 0.39);
         border-radius: 6px;
         margin-bottom: 40px;
